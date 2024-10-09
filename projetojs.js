@@ -11,8 +11,8 @@ console.log(SOMA);
 
 "Sendo assim, a resposta pro problema é 91."
 
-function gerarFibonacci(teste) {
-    let fibonacci = [0, 1]; 
+function projetoFibonacci(teste) {
+    let fibonacci = [0, 1];
     let fibonacci2 = fibonacci[fibonacci.length - 1] + fibonacci[fibonacci.length - 2];
     
     while (fibonacci2 <= teste) {
@@ -20,5 +20,12 @@ function gerarFibonacci(teste) {
         fibonacci2 = fibonacci[fibonacci.length - 1] + fibonacci[fibonacci.length - 2];
     }
 
-    return fibonacci;
+    if (fibonacci.includes(teste)) {
+        return `O número ${teste} pertence à sequência de Fibonacci.`;
+    } else {
+        return `O número ${teste} não pertence à sequência de Fibonacci.`;
+    }
 }
+let numero = parseInt(prompt("Informe um número: "));
+alert(projetoFibonacci(numero));
+

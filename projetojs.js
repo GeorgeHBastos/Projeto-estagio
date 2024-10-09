@@ -26,6 +26,7 @@ function projetoFibonacci(teste) {
         return `O número ${teste} não pertence à sequência de Fibonacci.`;
     }
 }
-let numero = parseInt(prompt("Informe um número: "));
-alert(projetoFibonacci(numero));
+let numero = 91;
 
+
+console.log(projetoFibonacci(numero));

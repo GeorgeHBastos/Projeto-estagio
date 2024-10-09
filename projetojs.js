@@ -13,13 +13,13 @@ console.log(SOMA);
 
 function gerarFibonacci (teste) {
 let fibonacci = 1;
-let fibonnacci2 = [fibonacci.lenght - 1] + fibonacci [fibonacci.lenght - 2];
-while (fibonnacci2 <= teste) {
-fibonacci.push(fibonnacci2);
+let fibonacci2 = [fibonacci.lenght - 1] + fibonacci [fibonacci.lenght - 2];
+while (fibonacci2 <= teste) {
+fibonacci.push(fibonacci2);
 
 }
-fibonnacci2 = fibonnacci[fibonacci[fibonacci.lenght -1]] + fibonacci [fibonacci.length - 2];
+fibonacci2 = fibonacci[fibonacci[fibonacci.lenght -1]] + fibonacci [fibonacci.length - 2];
 
 }
 
-return fibonnacci;
+return fibonacci;
